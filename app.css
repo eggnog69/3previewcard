@@ -1,0 +1,65 @@
+body {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.carcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carcard-type {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 2;
+    background-color: hsl(31, 77%, 52%);
+    padding: 15px 15px 15px 15px;
+
+}
+
+.carcard-type:nth-of-type(2) {
+
+    background-color: hsl(184, 100%, 22%);
+}
+
+.carcard-type:nth-of-type(3) {
+
+    background-color: hsl(179, 100%, 13%);
+}
+
+.carcard-type p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.carcard-type h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.carcard-type img {
+    max-width: 20%;
+}
+
+@media (min-width: 375px) {
+    .carcard {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carcard-type img {
+
+        flex: 1 1;
+
+    }
+}
